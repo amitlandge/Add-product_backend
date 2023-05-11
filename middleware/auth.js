@@ -17,7 +17,7 @@ const auth = async (req, res, next) => {
       }
     }
   } catch (error) {
-    res.send(error);
+    res.status(400).json(error);
   }
 };
 module.exports = auth;
